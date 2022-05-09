@@ -1,4 +1,4 @@
-function getCheapestHotel (input) { //DO NOT change the function's name.
+function getCheapestHotel (input) { 
     return "Cheapest hotel name"
 }
 
