@@ -1,5 +1,7 @@
 function getCheapestHotel (input) { 
-    return "Cheapest hotel name"
+    return "Cheapest hotel cliente"
 }
 
 exports.getCheapestHotel = getCheapestHotel
+
+

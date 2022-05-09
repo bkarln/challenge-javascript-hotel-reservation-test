@@ -5,14 +5,49 @@ const expect = chai.expect
 const hotels = require('../src/main')
 const getCheapestHotel = hotels.getCheapestHotel 
 
-describe('test', function () {
-  it('should return Lakewood', function () {
-    expect(getCheapestHotel("Regular: 16Mar2009(mon), 17Mar2009(tues), 18Mar2009(wed)")).to.equal("Lakewood");
-  });
-  it('should return Bridgewood', function () {
-    expect(getCheapestHotel("Regular: 20Mar2009(fri), 21Mar2009(sat), 22Mar2009(sun)")).to.equal("Bridgewood");
-  });
-  it('should return Ridgewood', function () {
-    expect(getCheapestHotel("Rewards: 26Mar2009(thur), 27Mar2009(fri), 28Mar2009(sat)")).to.equal("Ridgewood");
-  });
-})
+//main
+(function () {
+  const it = require('./test').it
+  const toBe = require('./test').toBe
+
+  const hotelConfig = require('../hotels').Hotels
+  const createHotel = require('../hotelController').createHotel
+  const betterHotel = require('../mainController').chooseBetterOption
+
+})()
+
+//dailyController
+(function () {
+  const it = require('./test').it
+  const toBe = require('./test').toBe
+
+  const discoverMonth = require('../dailyController').discoverMonth
+  const createDailyDt = require('../dailyController').createDailyData
+
+})()
+
+//hotelController
+(function () {
+  const it = require('./test').it
+  const toBe = require('./test').toBe
+
+  const Hotel = require('../Hotel')
+  const Rate = require('../Rate')
+
+  const createHotel = require('../hotelController').createHotel
+  const hotelConfig = require('../hotels').Hotels
+
+})()
+
+//userController
+(function () {
+  const it = require('./test').it
+  const toBe = require('./test').toBe
+  
+  const checkCategory = require('../userController').checkCategory
+  const createUser = require('../userController').createUser
+  const User = require('../User').User
+  const CATEGORIES = require('../userCategories')
+
+
+})()
