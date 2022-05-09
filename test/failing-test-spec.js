@@ -2,15 +2,15 @@
 
 const chai = require('chai')
 const expect = chai.expect
-const hotels = require('../src/main')
-const getCheapestHotel = hotels.getCheapestHotel 
+const hotel = require('../src/main')
+const getCheapestHotel = hotel.getCheapestHotel 
 
 //main
 (function () {
   const it = require('./test').it
   const toBe = require('./test').toBe
 
-  const hotelConfig = require('../hotels').Hotels
+  const hotelConfig = require('../hotel').hotel
   const createHotel = require('../hotelController').createHotel
   const betterHotel = require('../mainController').chooseBetterOption
 
@@ -35,7 +35,7 @@ const getCheapestHotel = hotels.getCheapestHotel
   const Rate = require('../Rate')
 
   const createHotel = require('../hotelController').createHotel
-  const hotelConfig = require('../hotels').Hotels
+  const hotelConfig = require('../hotel').hotel
 
 })()
 
